@@ -44,3 +44,8 @@ git reflog 查看以往的提交操作
 		b3b37a2 HEAD@{4}: commit: add distributed
 		af19cb7 HEAD@{5}: commit: update
 		81c8d32 HEAD@{6}: commit (initial): wrote a readme file
+git reset --hard 回退版本 HEAD^上个版本，HEAD^^上两个版本，HEAD~100上100个版本
+	git reset --hard 49a98d1c//通过指定版本号来跳转版本
+	git reset --hard HEAD^//返回上个版本
+	git reset HEAD readme.txt//撤回暂存区的修改
+git checkout -- file//撤销工作区的修改，但双横杠与file要有空格
