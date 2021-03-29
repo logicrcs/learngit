@@ -1,0 +1,46 @@
+git add 文件名
+git commit -m "版本更新的描述"
+git status 查看暂存区的状态
+		On branch master
+		Changes to be committed:
+		  (use "git restore --staged <file>..." to unstage)
+				modified:   readme.txt
+		
+git log 查看提交的历史记录
+git log --pretty=oneline 参数的作用是将
+		commit 49a98d1cb6fecf20cf87943b2e736e6267f7d718 (HEAD -> master)
+		Author: logic <1721549340@qq.com>
+		Date:   Mon Mar 29 16:19:45 2021 +0800
+		
+		    append GPL
+		
+		commit b3b37a26d734f634f2d17d6bb36637413ce3820c
+		Author: logic <1721549340@qq.com>
+		Date:   Mon Mar 29 16:15:49 2021 +0800
+		
+		    add distributed
+		
+		commit af19cb7e65f334be58cad5e0e895282aaafc2fea
+		Author: logic <1721549340@qq.com>
+		Date:   Mon Mar 29 14:10:27 2021 +0800
+		
+		    update
+		
+		commit 81c8d32d3cf9ca14255c97d85d7dc0ea88dc3873
+		Author: logic <1721549340@qq.com>
+		Date:   Mon Mar 29 11:44:24 2021 +0800
+		
+		    wrote a readme file
+git log --pretty=oneline 参数的作用是将内容简化成一行
+		49a98d1cb6fecf20cf87943b2e736e6267f7d718 (HEAD -> master) append GPL
+		b3b37a26d734f634f2d17d6bb36637413ce3820c add distributed
+		af19cb7e65f334be58cad5e0e895282aaafc2fea update
+		81c8d32d3cf9ca14255c97d85d7dc0ea88dc3873 wrote a readme file
+git reflog 查看以往的提交操作
+		49a98d1 (HEAD -> master) HEAD@{0}: reset: moving to 49a98d1c
+		b3b37a2 HEAD@{1}: reset: moving to HEAD^
+		49a98d1 (HEAD -> master) HEAD@{2}: reset: moving to HEAD
+		49a98d1 (HEAD -> master) HEAD@{3}: commit: append GPL
+		b3b37a2 HEAD@{4}: commit: add distributed
+		af19cb7 HEAD@{5}: commit: update
+		81c8d32 HEAD@{6}: commit (initial): wrote a readme file
