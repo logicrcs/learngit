@@ -1,0 +1,2 @@
+测试git存储方案
+测试 git diff <version> -- <filename> 与git diff --staged区别
